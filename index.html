@@ -1,0 +1,32 @@
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+<style>
+#lanklista > li {
+	display: none;
+}
+</style>
+<input type='text' id='kod' /><input type='submit' value='Skicka' id='kodknapp' />
+<ul id='lanklista'>
+<li id='lank1'><a href='https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link'>Länk</a></li>
+<li id='lank2'><a href='https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link'>Länk</a></li>
+<li id='lank3'><a href='https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link'>Länk</a></li>
+
+</ul>
+</body>
+<script>
+$("#kodknapp").click(function() {
+	//this.preventDefault();
+	console.log($("#kod").val());
+	if ($("#kod").val() == "abc123") {
+		$("#lank1").show();
+	}
+});
+</script>
+</html>
