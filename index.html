@@ -1,32 +1,58 @@
 <html>
-<head>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
-</head>
-<body>
-<h1>Skriv in koden som du hittar i backen här</h1>
-<style>
-#lanklista > li {
-	display: none;
-}
-</style>
-<input type='text' id='kod' /><input type='submit' value='Skicka' id='kodknapp' />
-<ul id='lanklista'>
-<li id='lank1'><a href='https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link'>Länk</a></li>
-<li id='lank2'><a href='https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link'>Länk</a></li>
-<li id='lank3'><a href='https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link'>Länk</a></li>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
 
-</ul>
-</body>
-<script>
+crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <p>Lagnamn</p>
+    <p> </p>
+    <style>
+		#lanklista > li {
+		display: none;
+		}
+		</style> <input id="kod" type="text"><input value="Kod" id="kodknapp" type="submit">
+    <p>ToDo: spara namn, skicka resultat, font, bilder </p>
+    <p> </p>
+    <p>Öppnade koder:</p>
+    <ul id="lanklista">
+      <li id="lank1"><a href="https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link">abc123</a></li>
+      <li id="lank2"><a href="https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link">def456</a></li>
+      <li id="lank3"><a href="https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link">123456</a></li>
+      <li id="lank4"><a href="https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link">789012</a></li>
+      <li id="lank5"><a href="https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link">abc123</a></li>
+      <li id="lank6"><a href="https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link">def456</a></li>
+      <li id="lank7"><a href="https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link">123456</a></li>
+      <li id="lank8"><a href="https://docs.google.com/forms/d/e/1FAIpQLScxlxhkfkYKBCpYQLuxDJFStQSnks8Cp82GK5MtCg1mfT2mnQ/viewform?usp=sf_link">789012</a></li>
+    </ul>
+    <script>
 $("#kodknapp").click(function() {
 	//this.preventDefault();
 	console.log($("#kod").val());
 	if ($("#kod").val() == "abc123") {
 		$("#lank1").show();
-	}
-});
+  }
+	else if ($("#kod").val() == "def456") {
+		$("#lank2").show();
+  }
+  else if ($("#kod").val() == "789012") {
+		$("#lank3").show();
+  }
+  else if ($("#kod").val() == "23456") {
+		$("#lank4").show();
+  }
+	else if ($("#kod").val() == "345678") {
+		$("#lank5").show();
+  }
+  else if ($("#kod").val() == "def456") {
+		$("#lank6").show();
+  }
+  else if ($("#kod").val() == "789012") {
+		$("#lank7").show();
+  }
+
+});123
 </script>
+  </body>
 </html>
